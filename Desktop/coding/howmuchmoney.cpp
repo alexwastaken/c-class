@@ -1,18 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int numberOfQuarters = 0;
-int numberOfDimes = 0;
-int numberOfNickles = 0;
-int numberOfPennies = 0;
-
 const int QUARTERS = 25;
 const int DIMES = 10;
 const int NICKLES = 5;
 const int PENNIES = 1;
 
-
 int main() {
+
+    int numberOfQuarters = 0;
+    int numberOfDimes = 0;
+    int numberOfNickles = 0;
+    int numberOfPennies = 0;
 
     cout << "Please enter number of coins:\n";
 
