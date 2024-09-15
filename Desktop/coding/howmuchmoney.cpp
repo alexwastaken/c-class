@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-float numberOfQuarters = 0;
-float numberOfDimes = 0;
-float numberOfNickles = 0;
-float numberOfPennies = 0;
+int numberOfQuarters = 0;
+int numberOfDimes = 0;
+int numberOfNickles = 0;
+int numberOfPennies = 0;
 
 int main() {
 
@@ -22,18 +22,13 @@ int main() {
     cout << "# of pennies:";
     cin >> numberOfPennies;
 
-    float total = (numberOfQuarters * .25) + (numberOfDimes * .1) + (numberOfNickles * .05) + (numberOfPennies *.01);
+    int total = (numberOfQuarters * 25) + (numberOfDimes * 10) + (numberOfNickles * 5) + (numberOfPennies * 1);
 
-    int totalCents = total * 100;
+    int cents = total % 100;
 
-    int cents = totalCents % 100;
-
-    int dollars = totalCents / 100;
+    int dollars = total / 100;
 
     cout << "The total is " << dollars << " dollars " << "and " << cents << " cents"; 
-
-
-
 
 }
 
