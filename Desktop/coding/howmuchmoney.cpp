@@ -6,6 +6,12 @@ int numberOfDimes = 0;
 int numberOfNickles = 0;
 int numberOfPennies = 0;
 
+const int QUARTERS = 25;
+const int DIMES = 10;
+const int NICKLES = 5;
+const int PENNIES = 1;
+
+
 int main() {
 
     cout << "Please enter number of coins:\n";
@@ -22,7 +28,7 @@ int main() {
     cout << "# of pennies:";
     cin >> numberOfPennies;
 
-    int total = (numberOfQuarters * 25) + (numberOfDimes * 10) + (numberOfNickles * 5) + (numberOfPennies * 1);
+    int total = (numberOfQuarters * QUARTERS) + (numberOfDimes * DIMES) + (numberOfNickles * NICKLES) + (numberOfPennies * PENNIES);
 
     int cents = total % 100;
 
